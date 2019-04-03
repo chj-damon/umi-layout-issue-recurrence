@@ -1,0 +1,49 @@
+@import '../../styles/common';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: rem(80);
+  width: 1200px;
+  margin: 0 auto;
+
+  .logo {
+    width: rem(140);
+    margin-right: rem(130);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .links {
+    width: rem(270);
+    display: flex;
+    justify-content: space-between;
+
+    .link {
+      display: inline-block;
+      color: $text-color;
+      font-size: rem(20);
+    }
+  }
+}
+
+.body {
+  position: relative;
+  height: calc(100% - #{rem(190)});
+  background-image: url(../../assets/login.jpg);
+}
+
+.footer {
+  height: rem(110);
+  line-height: rem(110);
+  color: $text-color;
+  font-size: $body-font-size;
+  margin: 0 auto;
+  text-align: center;
+
+  span {
+    margin-right: rem(10);
+  }
+}
